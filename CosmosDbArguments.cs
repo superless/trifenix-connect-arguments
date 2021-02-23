@@ -1,4 +1,6 @@
-﻿namespace trifenix.connect.arguments
+﻿using System.Collections.Generic;
+
+namespace trifenix.connect.arguments
 {
 
     /// <summary>
@@ -29,6 +31,30 @@
         /// The name database.
         /// </value>
         public string NameDb { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Containers of the cosmos dataBase.
+        /// <value>
+        /// List of containers
+        /// </value>
+        /// </summary>
+        public List<ContainerInfo> Containers { get; set; }
+
                       
+    }
+    /// <summary>
+    /// Class of containerInfo
+    /// </summary>
+    public class ContainerInfo
+    {
+        /// <summary>
+        /// Name of container
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// PartitionKey of container
+        /// </summary>
+        public string PartitionKey { get; set; }
     }
 }
