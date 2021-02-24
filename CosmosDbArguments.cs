@@ -38,23 +38,6 @@ namespace trifenix.connect.arguments
         /// List of containers
         /// </value>
         /// </summary>
-        public List<ContainerInfo> Containers { get; set; }
-
-                      
-    }
-    /// <summary>
-    /// Class of containerInfo
-    /// </summary>
-    public class ContainerInfo
-    {
-        /// <summary>
-        /// Name of container
-        /// </summary>
-        public string Name { get; set; }
-
-        /// <summary>
-        /// PartitionKey of container
-        /// </summary>
-        public string PartitionKey { get; set; }
+        public List<string> ContainersName { get; set; }                  
     }
 }
