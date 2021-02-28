@@ -38,6 +38,6 @@ namespace trifenix.connect.arguments
         /// List of containers
         /// </value>
         /// </summary>
-        public List<string> ContainersName { get; set; }                  
+        public string CollectionName { get; set; }                  
     }
 }
